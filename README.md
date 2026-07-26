@@ -38,15 +38,17 @@ ROUT → INPUT R
 
 GND → INPUT GND
 
+### Entre el PAM8403 y el ALTAVOZ (un solo altavoz, un solo canal)
+
+OUT+ y OUT– de ese canal → los dos terminales del altavoz
+
 ### Entre el ESP32 y el PAM8403 (para la alimentación)
 
 VIN → POWER +
 
 GND → POWER -
 
-### Entre el PAM8403 y el ALTAVOZ (un solo altavoz, un solo canal)
 
-OUT+ y OUT– de ese canal → los dos terminales del altavoz
 
 ### Entre el ESP32 y los pulsadores
 Están disponibles estas entradas del esp32 para usarlas como pulsadores: GPIO 4, GPIO 5, GPIO 13, GPIO 16, GPIO 17, GPIO 18, GPIO 19, GPIO 21, GPIO 22 y GPIO 23.
@@ -57,7 +59,11 @@ Los pulsadores deben conectar esos pines con el GND del ESP32.
 
 Usar Visual Code, instalando platformIO. 
 
+Modificar el código para decidir cuántos sonidos se quieren y en qué pines (ver los comentarios del código).
+
 Primero subir los mp3 (ojo, hay un límite de 3 megas aprox entre todos). Los mp3 no pueden tener TAGS. Se ponen en la carpeta DATA y se suben con la opción: "Upload Filesystem Image".
+
+Luego subir el código con la opción "Upload and monitor".
 
 
 
