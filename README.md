@@ -4,7 +4,7 @@ sonidos diferentes usando un timbre
 Demo: https://youtu.be/Yj5uMbEvICs
 
 ## Componentes:
-* Esp32
+* Esp32-wroom-32
 * PCM5102 (convertidor digital a analógico)
 * Pam8403 (amplificador)
 * Pulsadores (o timbre)
